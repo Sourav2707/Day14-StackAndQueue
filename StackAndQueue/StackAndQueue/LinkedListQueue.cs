@@ -29,6 +29,18 @@ namespace StackAndQueue
             Console.WriteLine("{0} inserted into queue ", node.data);
 
         }
+        public void Dequeue()                       //for removing nodes one by one from the queue
+        {
+            if (head == null)
+            {
+                Console.WriteLine("\nQueue is empty");
+            }
+            else
+            {
+                Console.WriteLine("\nTaken out " + head.data + " from the que");
+                head = head.next;
+            }
+        }
 
         internal void Display()
         {
